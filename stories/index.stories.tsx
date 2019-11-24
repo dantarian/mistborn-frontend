@@ -1,5 +1,6 @@
 import * as React from "react";
 import Glyph from "../src/components/Glyph";
+import Sheet from "../src/components/Sheet";
 import { storiesOf } from "@storybook/react";
 
 storiesOf("Glyph", module)
@@ -22,4 +23,10 @@ storiesOf("Glyph", module)
   .add("steel", () => <Glyph name="steel" />)
   .add("tin", () => <Glyph name="tin" />)
   .add("zinc", () => <Glyph name="zinc" />)
-  .add("big glyph", () => <Glyph name="atium" big={true} />);
+  .add("big glyph", () => <Glyph name="atium" size={8} />)
+  .add("medium glyph", () => <Glyph name="atium" size={5} />)
+  .add("small glyph", () => <Glyph name="atium" size={0.5} />);
+
+storiesOf("Sheet", module).add("Populated", () => (
+  <Sheet name="Kalden" nickname="Scars" concept="Pewterarm Brawler" />
+));

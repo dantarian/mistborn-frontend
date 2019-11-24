@@ -20,7 +20,7 @@ describe("Glyph", () => {
   });
 
   describe("Big glyph", () => {
-    const glyph = shallow(<Glyph name="steel" big={true} />);
+    const glyph = shallow(<Glyph name="steel" size={5} />);
 
     it("renders", () => {
       // Can't explicitly check size, so just check that it doesn't fail completely.
@@ -29,7 +29,7 @@ describe("Glyph", () => {
   });
 
   describe("Non-big glyph", () => {
-    const glyph = shallow(<Glyph name="steel" big={false} />);
+    const glyph = shallow(<Glyph name="steel" size={0.5} />);
 
     it("is not big", () => {
       // Can't explicitly check size, so just check that it doesn't fail completely.
