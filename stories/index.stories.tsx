@@ -28,5 +28,23 @@ storiesOf("Glyph", module)
   .add("small glyph", () => <Glyph name="atium" size={0.5} />);
 
 storiesOf("Sheet", module).add("Populated", () => (
-  <Sheet name="Kalden" nickname="Scars" concept="Pewterarm Brawler" />
+  <Sheet
+    name="Kalden"
+    nickname="Scars"
+    concept="Pewterarm Brawler"
+    crewName="The Goldblades"
+    cause="Make Urteau ours"
+    target="The Steel Ministry"
+    method="Theft/Spying"
+    race="Skaa"
+    gender="Male"
+    height="5' 10''"
+    weight="220 lbs"
+    physique={6}
+    charm={2}
+    wits={6}
+    resources={5}
+    influence={6}
+    spirit={3}
+  />
 ));
