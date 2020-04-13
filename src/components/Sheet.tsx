@@ -9,14 +9,10 @@ import {
   CardContent,
   Slider,
   TextField,
-  Typography,
-  Input
+  Typography
 } from "@material-ui/core";
-import CheckBoxOutlineBlankOutlinedIcon from "@material-ui/icons/CheckBoxOutlineBlankOutlined";
-import CheckBoxOutlinedIcon from "@material-ui/icons/CheckBoxOutlined";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Glyph from "./Glyph";
-import { sizing } from "@material-ui/system";
 
 export interface ISheetProps {
   name: string;
@@ -783,7 +779,7 @@ const Sheet: React.FC<ISheetProps> = props => {
                           ) : (
                             ""
                           )}
-                          {power.stunts && power.stunts.length != 0 ? (
+                          {power.stunts && power.stunts.length !== 0 ? (
                             <>
                               <Typography
                                 variant="h6"

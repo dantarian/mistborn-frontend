@@ -1,6 +1,6 @@
 import * as React from "react";
 import Icon from "@material-ui/core/Icon";
-import { makeStyles, getThemeProps } from "@material-ui/styles";
+import { makeStyles } from "@material-ui/styles";
 
 const GLYPH_NAMES = [
   "aluminium",
